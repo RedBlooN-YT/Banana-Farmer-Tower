@@ -69,7 +69,7 @@ namespace VoidBananaFarmer.Tower.Upgrades
                 towerModel.GetBehavior<CollectCashZoneModel>().attractRange = float.MaxValue;
                 towerModel.AddBehavior(bananaGun);
                 towerModel.AddBehavior(BananaFarmAttackModel);
-                towerModel.AddBehavior(new MonkeyCityIncomeSupportModel("_MonkeyCityIncomeSupport", true, 3.1f, null, "MonkeyCityBuff", "BuffIconVillagexx4"));
+                towerModel.AddBehavior(new MonkeyCityIncomeSupportModel("_MonkeyCityIncomeSupport", true, "ParagonBananaFarmerBuff", 3.1f, null, "MonkeyCityBuff", "BuffIconVillagexx4"));
                 towerModel.AddBehavior(new OverrideCamoDetectionModel("OverrideCamoDetectionModel_", true));
                 towerModel.GetDescendants<FilterInvisibleModel>().ForEach(model => model.isActive = false);
                 UpdateAttackModelRange(towerModel);

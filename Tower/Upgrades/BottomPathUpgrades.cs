@@ -72,7 +72,7 @@ namespace VoidBananaFarmer.Tower.Upgrades
             public override string Portrait => "BananaFarmer-003-Portrait";
             public override void ApplyUpgrade(TowerModel towerModel)
             {
-                towerModel.AddBehavior(new MonkeyCityIncomeSupportModel("_MonkeyCityIncomeSupport", true, 1.15f, null, "MonkeyCityBuff", "BuffIconVillagexx4"));
+                towerModel.AddBehavior(new MonkeyCityIncomeSupportModel("_MonkeyCityIncomeSupport", true, "BananaFarmerBuff", 1.15f, null, "MonkeyCityBuff", "BuffIconVillagexx4"));
                 towerModel.ApplyDisplay<Displays.TowerDisplays.BananaBankerDisplay>();
                 AttackModel? bananaFarmAttackModel = default;
                 foreach (var attackModel in towerModel.GetAttackModels())
