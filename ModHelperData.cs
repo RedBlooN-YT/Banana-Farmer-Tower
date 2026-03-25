@@ -9,5 +9,5 @@ public static class ModHelperData
     public const string RepoOwner = "Void-n-Null";
     public const string DllName = "BananaFarmer.dll";
     public const string Author = "Void & Null";
-    public const string WorksOnVersion = "34.3";
+    public const string WorksOnVersion = "53.0";
 }
